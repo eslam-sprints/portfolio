@@ -22,4 +22,18 @@ All text (experience, projects, skills, links) lives in [`src/data/profile.js`](
 
 ## Deploy
 
-Import this repository on [vercel.com/new](https://vercel.com/new). Vercel detects Vite automatically (build: `npm run build`, output: `dist`).
+Live at **https://eslam-portfolio-ten.vercel.app**.
+
+Deploys run from GitHub Actions ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) using the Vercel CLI:
+
+- push to `main` → production deploy
+- pull request into `main` → preview deploy
+- manual run from the Actions tab (`workflow_dispatch`) → production deploy
+
+Required repository secrets:
+
+| Secret | Value |
+| --- | --- |
+| `VERCEL_TOKEN` | Token from https://vercel.com/account/tokens |
+| `VERCEL_ORG_ID` | `orgId` from `.vercel/project.json` (after `vercel link`) |
+| `VERCEL_PROJECT_ID` | `projectId` from `.vercel/project.json` |
