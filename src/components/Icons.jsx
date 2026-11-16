@@ -47,3 +47,16 @@ export const MoonIcon = () => (
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
   </svg>
 )
+
+export const DownloadIcon = () => (
+  <svg {...base} width={16} height={16}>
+    <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+  </svg>
+)
+
+export const PinIcon = () => (
+  <svg {...base} width={14} height={14}>
+    <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z" />
+    <circle cx="12" cy="10" r="2.5" />
+  </svg>
+)

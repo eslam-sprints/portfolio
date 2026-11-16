@@ -11,6 +11,14 @@ export const profile = {
     { value: '×3', label: 'Performance gains' },
     { value: '4', label: 'Industries' },
   ],
+  available: true,
+  cv: '/Eslam_Mohamed_CV.pdf',
+  facts: [
+    { label: 'Based in', value: 'Cairo, Egypt' },
+    { label: 'Currently', value: 'Software Engineer at Sprints' },
+    { label: 'Focus', value: 'Backend · Mobile · Cloud' },
+    { label: 'Languages', value: 'Arabic, English' },
+  ],
   links: {
     email: 'eslammohamed7333@gmail.com',
     linkedin: 'https://www.linkedin.com/in/eslam-mohamed733/',
