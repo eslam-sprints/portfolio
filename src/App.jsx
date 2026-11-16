@@ -35,18 +35,27 @@ function useActiveSection(ids) {
   const [active, setActive] = useState(ids[0])
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((entry) => entry.isIntersecting)
-        if (visible.length) setActive(visible[0].target.id)
-      },
-      { rootMargin: '-30% 0px -60% 0px' },
-    )
-    ids.forEach((id) => {
-      const el = document.getElementById(id)
-      if (el) observer.observe(el)
-    })
-    return () => observer.disconnect()
+    // Active = last section whose top has passed 35% of the viewport; the last one once at page bottom.
+    const update = () => {
+      const { scrollHeight } = document.documentElement
+      if (window.innerHeight + window.scrollY >= scrollHeight - 2) {
+        setActive(ids[ids.length - 1])
+        return
+      }
+      let current = ids[0]
+      for (const id of ids) {
+        const el = document.getElementById(id)
+        if (el && el.getBoundingClientRect().top <= window.innerHeight * 0.35) current = id
+      }
+      setActive(current)
+    }
+    update()
+    window.addEventListener('scroll', update, { passive: true })
+    window.addEventListener('resize', update)
+    return () => {
+      window.removeEventListener('scroll', update)
+      window.removeEventListener('resize', update)
+    }
   }, [ids])
 
   return active

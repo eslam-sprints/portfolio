@@ -13,6 +13,7 @@ export const profile = {
   ],
   available: true,
   cv: '/Eslam_Mohamed_CV.pdf',
+  photo: '/photo.webp',
   facts: [
     { label: 'Based in', value: 'Cairo, Egypt' },
     { label: 'Currently', value: 'Software Engineer at Sprints' },

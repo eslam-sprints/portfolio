@@ -49,9 +49,13 @@ export function ProfileCard({ nav, active }) {
   return (
     <header className="profile">
       <div className="profile-top">
-        <div className="avatar" aria-hidden="true">
-          {initials}
-        </div>
+        {profile.photo ? (
+          <img className="avatar" src={profile.photo} alt={`Photo of ${profile.name}`} width="88" height="88" />
+        ) : (
+          <div className="avatar" aria-hidden="true">
+            {initials}
+          </div>
+        )}
         {profile.available && (
           <span className="badge">
             <span className="dot" /> Open to opportunities
