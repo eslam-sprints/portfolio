@@ -1,11 +1,11 @@
 export const profile = {
   name: 'Eslam Mohamed',
-  role: 'Software Engineer',
+  role: 'Senior Software Engineer',
   location: 'Cairo, Egypt',
   tagline:
-    'I build scalable web, mobile and cloud applications — from AI-powered grading and payment systems to real-time IoT control.',
+    'Backend & Cloud Engineer building scalable, AI-powered applications — from AI grading and payment systems to real-time IoT control.',
   summary:
-    'Software Engineer with 4+ years of experience across EdTech, Healthcare, IoT and digital solutions. At Sprints I lead development on the LMS, AI-assisted grading, payments and performance work. Before that I shipped healthcare mobile apps at Qeema-Tech, smart-home IoT apps at Impulses, and full-stack web apps at Creative Way.',
+    'Senior Software Engineer with 4+ years of experience designing and building scalable backend systems, cloud-native applications and AI-powered platforms. Experienced in Laravel, FastAPI, Node.js, AWS, Docker and modern software architecture, with a proven track record of improving system performance, reducing infrastructure costs and leading the delivery of high-impact products across EdTech, Healthcare, IoT and digital solutions.',
   stats: [
     { value: '4+', label: 'Years experience' },
     { value: '×3', label: 'Performance gains' },
@@ -17,7 +17,7 @@ export const profile = {
   facts: [
     { label: 'Based in', value: 'Cairo, Egypt' },
     { label: 'Currently', value: 'Software Engineer at Sprints' },
-    { label: 'Focus', value: 'Backend · Mobile · Cloud' },
+    { label: 'Focus', value: 'Backend · Cloud · AI' },
     { label: 'Languages', value: 'Arabic, English' },
   ],
   links: {
@@ -35,15 +35,14 @@ export const experience = [
     location: 'Maadi, Cairo',
     period: 'Mar 2023 – Present',
     highlights: [
-      'Revamped platform performance and scalability: designed large modules and high-impact epics, optimized schemas and queries for high-traffic usage — ×3 faster with lower infrastructure costs.',
-      'Built AI-assisted assignment grading that reads requirements and learner submissions (code, PDFs, videos, images, text) to produce rubric-aligned grades with explanations, plus human-in-the-loop feedback to refine prompts and scoring.',
-      'Extended the assignment system with team submissions, streamlined expert grading and new submission types (live code editor, video, images, PDFs) — ×3 grading throughput.',
-      'Built subscription and renewal flows across multiple payment gateways, and reusable dynamic forms that centralized data ownership and cut tooling costs.',
-      'Shipped a work-simulated "Virtual Inbox" that delivers corporate-style emails inside the LMS with instant feedback, admin customization and analytics.',
-      'Automated certificate generation end-to-end — ×2 faster graduation processing.',
-      'Led a small team delivering features end-to-end, enforcing code-quality and review standards and coordinating with product, design and infra.',
+      'Led the development of high-impact platform features, improving scalability and reducing infrastructure costs through database and system performance optimizations (3× performance improvement).',
+      'Built AI-powered assignment grading and enhanced submission workflows, reducing manual review effort while increasing grading speed and consistency (3× higher grading throughput).',
+      'Developed subscription, payment and dynamic workflow solutions that streamlined operations and reduced reliance on third-party tools.',
+      'Designed interactive learning experiences, including a Virtual Inbox simulation and analytics dashboards, to increase learner engagement.',
+      'Automated certificate generation and graduation workflows, cutting graduation processing time by 50%.',
+      'Led a small engineering team, driving end-to-end feature delivery, code quality and cross-functional collaboration to deliver releases on schedule.',
     ],
-    tags: ['Laravel', 'FastAPI', 'MySQL', 'Redis', 'AWS', 'LLMs'],
+    tags: ['Laravel', 'PHP', 'MySQL', 'Blade', 'PHPUnit', 'AI'],
   },
   {
     role: 'Software Engineer',
@@ -52,10 +51,10 @@ export const experience = [
     location: 'Nasr City, Cairo',
     period: 'Sep 2022 – Feb 2023',
     highlights: [
-      'Shipped multiple medical mobile apps end-to-end with Flutter and REST backends.',
-      'Introduced componentized UI, state management and CI checks to cut lead time and regressions.',
-      'Optimized API consumption with batching, caching and pagination to reduce median screen load time.',
-      'Automated build pipelines (CodeMagic / CircleCI) and wrote release runbooks for a stable weekly cadence.',
+      'Shipped multiple medical mobile apps end-to-end with Flutter (Dart) and REST backends, working with designers and backend engineers to turn requirements into production releases.',
+      'Introduced componentized UI, state management and CI checks to shorten feature lead time and reduce regressions.',
+      'Optimized API consumption with request batching, caching and pagination to speed up screen loads.',
+      'Wrote release runbooks and automated build pipelines (CodeMagic / CircleCI) to keep a stable weekly release cadence.',
     ],
     tags: ['Flutter', 'Dart', 'CI/CD', 'REST'],
   },
@@ -67,7 +66,7 @@ export const experience = [
     period: 'Jan 2021 – Sep 2022',
     highlights: [
       'Built and maintained Home Impulse, a cross-platform Flutter app controlling lights, ACs and fans in real time.',
-      'Designed multi-home, multi-user tenancy with roles, permissions and device grouping for bulk actions.',
+      'Designed multi-home, multi-user tenancy with roles, permissions and device grouping for bulk actions, reducing taps for common routines.',
       'Aligned device protocols with backend and embedded teams; validated latency and reliability SLAs.',
       'Implemented scenes and shortcuts to orchestrate multi-device routines.',
     ],
@@ -77,11 +76,11 @@ export const experience = [
     role: 'Software Engineer',
     company: 'Creative Way',
     url: 'https://creativeway-ad.com/',
-    location: 'Doqi, Giza',
+    location: 'Dokki, Giza',
     period: 'Jan 2020 – Jan 2021',
     highlights: [
-      'Built web applications with React, Node.js and WordPress for clients across industries.',
-      'Drove responsive UI, accessibility fixes and SEO readiness.',
+      'Developed and maintained web applications using React, Node.js and WordPress for cross-industry clients; owned backlog grooming to ship on schedule.',
+      'Improved responsive UI, accessibility and SEO readiness across client sites.',
       'Led deployments on shared hosting and cloud; containerized services with Docker for faster rollbacks.',
     ],
     tags: ['React', 'Node.js', 'WordPress', 'Docker'],
@@ -148,29 +147,28 @@ export const projects = [
 ]
 
 export const skills = [
-  { group: 'Languages', items: ['PHP', 'JavaScript', 'Python', 'Dart', 'Go', 'Java', 'C/C++'] },
+  { group: 'Languages', items: ['PHP', 'Python', 'JavaScript', 'Dart', 'Go', 'Java', 'C/C++'] },
   {
-    group: 'Frameworks',
-    items: ['Laravel', 'FastAPI', 'Django', 'React', 'Node.js', 'NestJS', 'Flutter', 'Ionic', 'WordPress'],
+    group: 'Backend',
+    items: ['Laravel', 'FastAPI', 'Django', 'Node.js', 'NestJS', 'RESTful APIs', 'gRPC', 'Microservices'],
   },
+  { group: 'Frontend & Mobile', items: ['React', 'Flutter', 'Ionic', 'WordPress'] },
+  { group: 'Databases', items: ['MySQL', 'MongoDB', 'Redis'] },
   {
-    group: 'Cloud & Data',
-    items: ['AWS', 'Docker', 'Linux', 'MySQL', 'MongoDB', 'Redis', 'gRPC', 'Microservices'],
+    group: 'Cloud & DevOps',
+    items: ['AWS', 'Docker', 'Linux', 'Git', 'CI/CD (GitHub, CodeMagic, CircleCI)'],
   },
-  {
-    group: 'Practices',
-    items: ['REST APIs', 'CI/CD', 'GitHub CI', 'CodeMagic', 'CircleCI', 'Agile', 'Cursor AI'],
-  },
+  { group: 'Tools & Practices', items: ['Cursor AI', 'Agile'] },
 ]
 
 export const education = {
-  degree: 'Bachelor of Computers and Artificial Intelligence',
+  degree: 'B.Sc. in Information Systems',
   school: 'Helwan University',
-  detail: 'Information Systems',
+  detail: 'Faculty of Computers and Artificial Intelligence',
   year: '2022',
 }
 
 export const languages = [
   { name: 'Arabic', level: 'Native' },
-  { name: 'English', level: 'Fluent' },
+  { name: 'English', level: 'Fluent (professional working proficiency)' },
 ]
