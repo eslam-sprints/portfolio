@@ -170,5 +170,5 @@ export const education = {
 
 export const languages = [
   { name: 'Arabic', level: 'Native' },
-  { name: 'English', level: 'Fluent (professional working proficiency)' },
+  { name: 'English', level: 'Fluent' },
 ]
