@@ -89,6 +89,14 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'ITIDA Gigs — Freelancing Program Platform',
+    description:
+      'Application and onboarding platform for ITIDA’s national freelancing program, run by Sprints: eligibility checks, Coderbyte assessments, ID card verification with AI OCR, and automatic seats in training rounds.',
+    tags: ['Laravel', 'AI OCR', 'Webhooks', 'MySQL'],
+    url: 'https://sprints.ai/en-eg/itida-gigs',
+    linkLabel: 'Website',
+  },
+  {
     title: 'Sprints LMS — Learning & Talent Platform',
     description:
       'Laravel platform that takes learners from assessment through customized learning journeys and assignments to graduation. I lead its development: AI-assisted grading, payments and subscriptions, and 3× performance work.',
