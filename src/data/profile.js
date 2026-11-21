@@ -89,6 +89,14 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'VoiceTut Kaggle — AI Voice Recording',
+    description:
+      'Open-source tool that clones voices and records Egyptian Arabic lines on Kaggle’s free GPUs, then checks every clip with speech recognition and re-records the bad ones. CLI and Tauri desktop app.',
+    tags: ['Python', 'TTS / ASR', 'Tauri', 'Kaggle'],
+    url: 'https://github.com/eslam733/voicetut-kaggle',
+    linkLabel: 'Code',
+  },
+  {
     title: 'High-Availability Web App on AWS',
     description:
       'Full CloudFormation stack that provisions networking, compute and security layers for an Apache app on EC2, with an infrastructure diagram.',
