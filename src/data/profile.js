@@ -89,6 +89,14 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'Sprints LMS — Learning & Talent Platform',
+    description:
+      'Laravel platform that takes learners from assessment through customized learning journeys and assignments to graduation. I lead its development: AI-assisted grading, payments and subscriptions, and 3× performance work.',
+    tags: ['Laravel', 'MySQL', 'Redis', 'OpenAI'],
+    url: 'https://sprints.ai/',
+    linkLabel: 'Website',
+  },
+  {
     title: 'VoiceTut Kaggle — AI Voice Recording',
     description:
       'Open-source tool that clones voices and records Egyptian Arabic lines on Kaggle’s free GPUs, then checks every clip with speech recognition and re-records the bad ones. CLI and Tauri desktop app.',
