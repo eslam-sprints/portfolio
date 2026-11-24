@@ -105,11 +105,11 @@ export const projects = [
     linkLabel: 'Website',
   },
   {
-    title: 'VoiceTut Kaggle — AI Voice Recording',
+    title: 'VoiceTut Studio — AI Voice Recording',
     description:
-      'Open-source tool that clones voices and records Egyptian Arabic lines on Kaggle’s free GPUs, then checks every clip with speech recognition and re-records the bad ones. CLI and Tauri desktop app.',
+      'Open-source tool that clones voices and records Egyptian Arabic lines on Kaggle’s free GPUs or ElevenLabs, then checks every clip with speech recognition and re-records the bad ones. CLI and Tauri desktop app.',
     tags: ['Python', 'TTS / ASR', 'Tauri', 'Kaggle'],
-    url: 'https://github.com/eslam733/voicetut-kaggle',
+    url: 'https://github.com/eslam733/voicetut-studio',
     linkLabel: 'Code',
   },
   {
