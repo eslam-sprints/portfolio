@@ -89,6 +89,13 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'يلا نفكّر (Yalla Nfakkar) — Kids’ Thinking Games',
+    description:
+      'Kids solve a mystery by playing thinking games: every win earns a clue, and six clues reveal the secret. The puzzles are generated on the fly and always fair, adapt to each child’s level, and come with Egyptian Arabic voices for 8 characters.',
+    tags: ['Flutter', 'Dart', 'Game design', 'TTS'],
+    linkLabel: 'In development',
+  },
+  {
     title: 'ITIDA Gigs — Freelancing Program Platform',
     description:
       'Application and onboarding platform for ITIDA’s national freelancing program, run by Sprints: eligibility checks, Coderbyte assessments, ID card verification with AI OCR, and automatic seats in training rounds.',

@@ -168,16 +168,28 @@ export function Projects() {
   return (
     <Section id="projects" title="Projects">
       <div className="grid">
-        {projects.map((project) => (
-          <a key={project.title} className="project card" href={project.url} target="_blank" rel="noreferrer">
-            <h3>
-              {project.title} <ArrowIcon />
-            </h3>
-            <p>{project.description}</p>
-            <Tags items={project.tags} />
-            <span className="project-link">{project.linkLabel}</span>
-          </a>
-        ))}
+        {projects.map((project) => {
+          const content = (
+            <>
+              <h3>
+                {project.title} {project.url && <ArrowIcon />}
+              </h3>
+              <p>{project.description}</p>
+              <Tags items={project.tags} />
+              <span className="project-link">{project.linkLabel}</span>
+            </>
+          )
+          // Projects without a public link (private repo, unreleased app) render as a plain card.
+          return project.url ? (
+            <a key={project.title} className="project card" href={project.url} target="_blank" rel="noreferrer">
+              {content}
+            </a>
+          ) : (
+            <article key={project.title} className="project card no-link">
+              {content}
+            </article>
+          )
+        })}
       </div>
     </Section>
   )
